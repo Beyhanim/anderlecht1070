@@ -91,21 +91,22 @@ main {
 
 
 /* Responsiveness */
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     main {
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: 1fr 2fr; /* Linker en rechter kolom verhouding */
+        gap: 40px; /* Ruimte tussen de kolommen */
     }
 
-    #left-section {
-        flex: 1;
+      #left-section, #right-section {
+        margin: 0 auto;
     }
 
-    #right-section {
-        flex: 2;
-    }
-
-      .article {
-        flex-direction: column; /* Tekst en afbeelding komen onder elkaar */
+   .article {
+        display: grid;
+        grid-template-columns: 1fr auto; /* Tekst en afbeelding naast elkaar */
+        gap: 20px;
+        align-items: center; /* Centreren in hoogte */
     }
 
     .article img {
