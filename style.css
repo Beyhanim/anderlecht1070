@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background: url('anderlecht/generiek.png') no-repeat center/cover;
+    background: url('anderlecht\ generiek.png') no-repeat center/cover;
     color: #000;
     text-align: center;
     padding: 50px 10px;
@@ -70,7 +70,7 @@ main {
 
 .article img {
     flex-shrink: 0;
-    max-width: 150px;
+    max-width: 100%;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
