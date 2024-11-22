@@ -61,17 +61,20 @@ main {
 .article {
     display: flex;
     align-items: flex-start;
+    justify-content: space-between;
     gap: 20px;
     padding: 20px;
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
+    flex-wrap: wrap;
 }
 
 .article img {
     flex-shrink: 0;
-    max-width: 100%;
+    max-width: 150px;
     height: auto;
+    margin-left: auto; 
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -85,6 +88,7 @@ main {
     margin: 0;
     color: #555;
 }
+
 
 /* Responsiveness */
 @media (min-width: 768px) {
@@ -100,8 +104,14 @@ main {
         flex: 2;
     }
 
+      .article {
+        flex-direction: column; /* Tekst en afbeelding komen onder elkaar */
+    }
+
     .article img {
-        max-width: 200px;
+        max-width: 100%; /* Afbeelding schaalt naar volledige breedte */
+        margin-left: 0; /* Marges verwijderen voor een gecentreerde positie */
+        margin-top: 10px; /* Ruimte boven de afbeelding */
     }
 }
 
